@@ -1,1 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="calculator-container">
+        <h1>Age Calculator</h1>
+        <div class="input-group">
+            <label for="dob-day">Day</label>
+            <input type="number" id="dob-day" placeholder="DD" min="1" max="31">
+            <div id="day-error" class="error">Please enter a valid day (1-31)</div>
+        </div>
+
+        <div class="input-group">
+            <label for="dob-month">Month</label>
+            <input type="number" id="dob-month" placeholder="MM" min="1" max="12">
+            <div id="month-error" class="error">Please enter a valid month (1-12)</div>
+        </div>
+
+        <div class="input-group">
+            <label for="dob-year">Year</label>
+            <input type="number" id="dob-year" placeholder="YYYY" min="1900" max="2099">
+            <div id="year-error" class="error">Please enter a valid year (1900-2099)</div>
+        </div>
+
+        <button id="calculate-btn">Calculate Age</button>
+
+        <div id="result" class="result">
+            <h2 class="age-details">Your Age Details</h2>
+            <div class="result-item">
+                <span class="result-label">Years:</span>
+                <span id="years" class="result-value">--</span>
+            </div>
+            <div class="result-item">
+                <span class="result-label">Months:</span>
+                <span id="months" class="result-value">--</span>
+            </div>
+            <div class="result-item">
+                <span class="result-label">Days:</span>
+                <span id="days" class="result-value">--</span>
+            </div>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+
+</html>
